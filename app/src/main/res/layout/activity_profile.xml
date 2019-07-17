@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:text="Joseph Kandi"
+                android:text="@string/full_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
         </androidx.cardview.widget.CardView>
 
@@ -68,15 +68,11 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textStyle="bold"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/BoldLabelStyle"
                 android:id="@+id/txtTrackLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="@dimen/default_margin"
-                android:text="Track: "
+                android:text="@string/track"
                 app:layout_constraintEnd_toStartOf="@+id/txtTrack"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,14 +80,10 @@
 
             <TextView
                 android:id="@+id/txtTrack"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/MediumLabelStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Android"
+                android:text="@string/android"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/txtTrackLabel"
@@ -102,35 +94,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="@dimen/default_margin"
-                android:background="@android:color/darker_gray"
+                android:background="#ccc"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtTrackLabel" />
 
             <TextView
-                android:textStyle="bold"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/BoldLabelStyle"
                 android:id="@+id/txtCountryLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="@dimen/default_margin"
-                android:text="Country: "
+                android:text="@string/country"
                 app:layout_constraintEnd_toStartOf="@+id/txtCountryValue"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line1" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/MediumLabelStyle"
                 android:id="@+id/txtCountryValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="South Africa"
+                android:text="@string/south_africa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/txtCountryLabel"
@@ -147,29 +134,24 @@
                 app:layout_constraintTop_toBottomOf="@id/txtCountryLabel" />
 
             <TextView
-                android:textStyle="bold"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/BoldLabelStyle"
                 android:id="@+id/textEmailLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="@dimen/default_margin"
-                android:text="Email: "
+                android:text="@string/email"
                 app:layout_constraintEnd_toStartOf="@+id/textEmailValue"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line2" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/MediumLabelStyle"
                 android:id="@+id/textEmailValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="josephkandi@gmail.com"
+                android:text="@string/josephkandi_gmail_com"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textEmailLabel"
@@ -186,29 +168,24 @@
                 app:layout_constraintTop_toBottomOf="@id/textEmailLabel" />
 
             <TextView
-                android:textStyle="bold"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/BoldLabelStyle"
                 android:id="@+id/textPhoneLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="@dimen/default_margin"
-                android:text="Phone Number: "
+                android:text="@string/phone_number"
                 app:layout_constraintEnd_toStartOf="@+id/textPhoneValue"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line3" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/MediumLabelStyle"
                 android:id="@+id/textPhoneValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="+27 73 052 2110"
+                android:text="@string/phone_number_value"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textPhoneLabel"
@@ -225,29 +202,24 @@
                 app:layout_constraintTop_toBottomOf="@id/textPhoneLabel" />
 
             <TextView
-                android:textStyle="bold"
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/BoldLabelStyle"
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="@dimen/default_margin"
-                android:text="Slack Username: "
+                android:text="@string/slack_username"
                 app:layout_constraintEnd_toStartOf="@+id/textView9"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line4" />
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/MediumLabelStyle"
                 android:id="@+id/textView9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="\@Joseph Kandi"
+                android:text="@string/joseph_kandi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textView8"

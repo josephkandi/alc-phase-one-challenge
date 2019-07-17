@@ -3,4 +3,15 @@
     <string name="about_alc">About ALC</string>
     <string name="my_profile">My Profile</string>
     <string name="welcome_message">Welcome to ALC 4.0</string>
+    <string name="full_name">Joseph Kandi</string>
+    <string name="track">Track:</string>
+    <string name="android">Android</string>
+    <string name="country">Country:</string>
+    <string name="south_africa">South Africa</string>
+    <string name="email">Email:</string>
+    <string name="josephkandi_gmail_com">josephkandi@gmail.com</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="phone_number_value">+27 73 052 2110</string>
+    <string name="slack_username">Slack Username:</string>
+    <string name="joseph_kandi">\@Joseph Kandi</string>
 </resources>
