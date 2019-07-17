@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:alpha="0.8"
+            android:background="@drawable/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message" />
+    <TextView
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:text="We are a global team dedicated to the belief that brilliance is evenly distributed. We are problem solvers, team builders, techies (and non-techies!) who work together across borders to power today’s engineering teams and invest in tomorrow’s leaders."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:id="@+id/btnAboutALC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_alc" />
+
+    <Button
+        android:background="@drawable/button_background_transparent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:id="@+id/btnMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile" />
+
+</LinearLayout>
